@@ -1,11 +1,7 @@
-# ![Gulp Starter](extras/demo/src/images/gulp-starter-logo.png)
-
-[![Build Status](https://travis-ci.org/vigetlabs/gulp-starter.svg?branch=static-server)](https://travis-ci.org/vigetlabs/gulp-starter)
-
-Gulp Starter is a delicious blend of tasks and build tools poured into [Gulp](http://gulpjs.com/) to form a full-featured modern asset pipeline. It can be used as-is as a static site builder, or can be configured and integrated into your own development environment and site or app structure. The [extras](./extras) folder contains configuration details for Rails and Craft, with more to follow. [Check out the compiled demo](http://vigetlabs.github.io/gulp-starter/) and play with [the source files](extras/demo)!
+# globally-speaking
 
 ```bash
-git clone https://github.com/vigetlabs/gulp-starter.git MyApp
+https://github.com/patashe/globally-speaking.git MyApp
 cd MyApp
 npm install
 npm start
@@ -27,7 +23,7 @@ Features | Tools Used
 ## Usage
 Make sure Node installed. I recommend using [NVM](https://github.com/creationix/nvm) to manage versions. 
 
-This has been tested on Node `0.12.x` - `5.9.0`, and should work on newer versions as well. [File an issue](https://github.com/vigetlabs/gulp-starter/issues) if it doesn't!
+This has been tested on Node `0.12.x` - `5.9.0`, and should work on newer versions as well. 
 
 #### Install Dependencies
 ```bash
@@ -170,9 +166,3 @@ Original Blog Post: https://www.viget.com/articles/gulp-browserify-starter-faq
 
 ***
 
-<a href="http://code.viget.com">
-  <img src="http://code.viget.com/github-banner.png" alt="Code At Viget">
-</a>
-
-Visit [code.viget.com](http://code.viget.com) to see more projects from [Viget.](https://viget.com)
-# globally-speaking
