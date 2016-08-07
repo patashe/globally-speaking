@@ -1,0 +1,28 @@
+.navbar.navbar-grey .navbar-brand{
+	height: 63px;
+}
+
+.navbar.navbar-grey .navbar-nav{
+	margin-top:1em;
+}
+
+.navbar.navbar-grey .icon-bar{
+	background-color:$gray;
+}
+
+.navbar.navbar-grey .navbar-toggle{
+	margin-top:1em;
+}
+
+.navbar li a.active{
+	font-weight:700;
+}
+
+.navbar.navbar-grey a{
+	color:$gray;
+}
+
+.navbar.navbar-grey a:hover{
+	background:transparent;
+	text-decoration:underline;
+}

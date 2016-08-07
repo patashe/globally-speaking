@@ -1,0 +1,186 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+
+<nav class="navbar navbar-grey">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" title="Return to home"><img src="images/logo.png" alt="Globally Speaking"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="active">English</a></li>
+        <li><a href="#">Italiano</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Logged in as <strong>sarah@gmail.com</strong> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<h1 class="text-center">Registration</h1>
+<p class="lead text-center">For Cambridge Language Assessment Exam</p>
+
+
+<div class="container">
+
+	<div class="row bs-wizard">
+
+	    <div class="col-xs-4 bs-wizard-step complete">
+
+	      <div class="progress"><div class="progress-bar"></div></div>
+
+	      <a href="#" class="bs-wizard-dot"></a>
+
+	      <div class="bs-wizard-info text-center">Select Exam</div>
+
+	    </div>
+
+	    <div class="col-xs-4 bs-wizard-step active"><!-- complete -->
+
+	      <div class="progress"><div class="progress-bar"></div></div>
+
+	      <a href="#" class="bs-wizard-dot"></a>
+
+	      <div class="bs-wizard-info text-center">Your Details</div>
+
+	    </div>
+
+	    <div class="col-xs-4 bs-wizard-step disabled"><!-- complete -->
+
+	      <div class="progress"><div class="progress-bar"></div></div>
+
+	      <a href="#" class="bs-wizard-dot"></a>
+
+	      <div class="bs-wizard-info text-center">Make Payment</div>
+
+	    </div>
+
+	</div>
+
+</div>
+	
+
+<div class="container">
+  <div class="row">
+  	<div class="col-md-12">
+
+	    <div class="panel">
+		  <div class="panel-body">
+
+			<h2>h2. Bootstrap heading</h2>
+			<h3>h3. Bootstrap heading</h3>
+			<h4>h4. Bootstrap heading</h4>
+			<h5>h5. Bootstrap heading</h5>
+			<h6>h6. Bootstrap heading</h6>
+
+			<p class="lead">Nullam quis risus eget urna mollis ornare vel eu <strong>rendered as bold text</strong> leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+			<p>Cum <a href="#">sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p> 
+			<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+
+			<ul>
+			  <li>Nullam quis risus eget urna mollis ornare</li>
+			  <li>Nullam quis risus eget urna mollis ornare</li>
+			  <li>Nullam quis risus eget urna mollis ornare</li>
+			  <li>Nullam quis risus eget urna mollis ornare</li>
+			</ul>
+
+			  <!-- Standard button -->
+			<button type="button" class="btn btn-default">Default</button>
+
+			<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+			<button type="button" class="btn btn-primary">Primary</button>
+
+			<!-- Indicates a dangerous or potentially negative action -->
+			<button type="button" class="btn btn-danger">Danger</button>
+
+			<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+			<button type="button" class="btn btn-link">Link</button>
+
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			  Launch demo modal
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			        ...
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<form>
+			  <h3 class="text-center">h3. Bootstrap heading</h3>
+			  <div class="form-group">
+			    <label class="control-label" for="exampleInputEmail1">Email address</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			  </div>
+			  <div class="form-group">
+			    <label class="control-label" for="exampleInputPassword1">Password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  <h3 class="text-center">h3. Bootstrap heading</h3>
+			  <div class="form-group has-error">
+			      <label class="control-label" for="exampleInputEmail2">Email address</label>
+			      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+			      <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+			  </div>
+			  <div class="checkbox">
+			    <label>
+			      <input type="checkbox"> Check me out
+			    </label>
+			  </div>
+			  <div class="checkbox">
+			  <label>
+			    <input type="checkbox" value="">
+			    Option one is this and that&mdash;be sure to <a href="#">include why it's great</a>
+			  </label>
+			</div>
+
+			<div class="panel-action"><button type="submit" class="btn btn-primary btn-lg">Continue</button></div>
+			</form>
+		  </div>
+		</div>
+
+	<h3 class="text-center">Need Help?</h3>
+	<p class="text-center">Nullam quis risus eget urna mollis ornare vel eu</p>
+
+	</div>
+  </div>
+</div>
+{% endblock %}
