@@ -1,0 +1,17 @@
+.table-grey .row{
+	margin-bottom:0.5em;
+	border-radius:0.5em;
+	padding:0.5em;
+}
+
+.table-grey .row.active{
+	background-color:#F6F7F8;
+}
+
+.table-grey .row .col{
+	padding-top:1em;
+}
+
+.table-grey .btn:hover{
+	background-color:$brand-secondary;
+}
